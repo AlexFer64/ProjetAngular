@@ -1,0 +1,18 @@
+.list-intervention{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 20px;
+    border-color: rgb(199, 20, 20);
+    border: 25px;
+
+}

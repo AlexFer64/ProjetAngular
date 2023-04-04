@@ -1,1 +1,5 @@
-<p>liste-interventions works!</p>
+<div class="list-intervention">
+    <ng-container *ngFor="let uneInter of listIntervention$ | async">
+        <app-une-intervention [theInter]="uneInter"></app-une-intervention>
+    </ng-container>
+</div>

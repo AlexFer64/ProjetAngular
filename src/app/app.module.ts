@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UneInterventionComponent } from './une-intervention/une-intervention.component';
+import { HttpClientModule } from '@angular/common/http'; 
 import { ListeInterventionsComponent } from './liste-interventions/liste-interventions.component';
+import { AddInterComponent } from './add-inter/add-inter.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ListeInterventionsComponent } from './liste-interventions/liste-interve
     HeaderComponent,
     FooterComponent,
     UneInterventionComponent,
-    ListeInterventionsComponent
+    ListeInterventionsComponent,
+    AddInterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
