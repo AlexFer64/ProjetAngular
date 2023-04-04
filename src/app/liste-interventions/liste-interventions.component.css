@@ -12,7 +12,6 @@
     font-weight: 300;
     color: #333;
     margin-top: 20px;
-    border-color: rgb(199, 20, 20);
-    border: 25px;
+    grid-gap: 15px;
 
 }

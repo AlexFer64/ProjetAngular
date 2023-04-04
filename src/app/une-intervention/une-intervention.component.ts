@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Intervention } from '../models/Intervention';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { InterventionsService } from '../services/interventions.service';
 
 @Component({
@@ -23,6 +22,11 @@ export class UneInterventionComponent {
   else{
   this.uneInter = this.theInter;
   }
+
   }
  
+  detailIntervention(){
+    this.router.navigate(['intervention', this.uneInter.id]);
+  }
+
 }

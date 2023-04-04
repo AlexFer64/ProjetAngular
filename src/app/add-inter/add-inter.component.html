@@ -1,1 +1,43 @@
-<p>add-inter works!</p>
+<div class="intervention-form">
+    <section>
+        <h2>Saisir une nouvelle intervention</h2>
+        <form [formGroup]="formulaire">
+            <div class="formGroup">
+                <label for="nomTec">Nom du technicien</label>
+                <input type="text" class="form-control"  id="nomTec" formControlName="nomTec">
+            </div>
+            <div class="formGroup">
+                <label for="nomClient">Nom du client</label>
+                <input type="text"  class="form-control" id="nomClient" formControlName="nomClient">
+            </div>
+            <div class="formGroup"> 
+                <label for="adresseClient">Adresse du client</label>
+                <input type="text"  class="form-control" id="adresseClient" formControlName="adresseClient">
+            </div>
+            <div  class="formGroup">
+                <label for="marque">Marque</label>
+                <input type="text"  class="form-control" id="marque" formControlName="marque">
+            </div >
+            <div  class="formGroup">
+                <label for="modele">Modele</label>
+                <input type="text"  class="form-control" id="modele" formControlName="modele">
+            </div >
+            <div  class="formGroup">
+                <label for="dateMiseEnService">Date de mise en service</label>
+                <input type="date"  class="form-control" id="dateMiseEnService" formControlName="dateMiseEnService">
+            </div >
+            <div  class="formGroup">
+                <label for="numSerie">Numéro de série</label>
+                <input type="text"  class="form-control" id="numSerie" formControlName="numSerie">
+            </div >
+            <div  class="formGroup">
+                <label for="description">Description</label>
+                <input type="textarea"  class="form-control" id="description" formControlName="description">
+            </div >
+            <div  class="formGroup">
+                <label for="tempsPasser">Temps passé</label>
+                <input type="text"  class="form-control" id="tempsPasser" formControlName="tempsPasser">
+            </div >
+        </form>
+    </section>
+</div>
